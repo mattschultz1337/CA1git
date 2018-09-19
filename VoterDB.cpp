@@ -5,7 +5,7 @@
 using namespace std;
 
 
-void cmd_new(string& lastname,string& firstname, int& age, int& stnum, string& streetname, string& town, string& zip, float& amtdonated){
+static void cmd_new(string& lastname,string& firstname, int& age, int& stnum, string& streetname, string& town, string& zip, float& amtdonated){
    cout << "\nEnter First Name\n";
    cout << ">: ";
    getline (cin, firstname);
@@ -32,7 +32,7 @@ void cmd_new(string& lastname,string& firstname, int& age, int& stnum, string& s
    return;
 }
 
-void cmd_update(string& lastname,string& firstname, int& age, int& stnum, string& streetname, string& town, string& zip){
+static void cmd_update(string& lastname,string& firstname, int& age, int& stnum, string& streetname, string& town, string& zip){
    string input="";
    cout << "\nEnter Y or N\n";
    cout << "Change First Name? (" << firstname << ")\n";
@@ -55,7 +55,7 @@ void cmd_update(string& lastname,string& firstname, int& age, int& stnum, string
 	cout << "\n>: ";
       stringstream(cin,age);
       input="";
-   } 
+   }
    cout << "\nChange Street Number? (" << stnum << ")\n";
    cout << ">: ";
    if(getline(cin,input)=="Y" || getline(cin,input)=="y"){
@@ -88,7 +88,7 @@ void cmd_update(string& lastname,string& firstname, int& age, int& stnum, string
    return;
 }
 
-void cmd_view(string& lastname,string& firstname, int& age, int& stnum, string& streetname, string& town, string& zip, float& amtdonated){
+static void cmd_view(string& lastname,string& firstname, int& age, int& stnum, string& streetname, string& town, string& zip, float& amtdonated){
    cout << firstname << " " << lastname << ", " << age << "\n"
    cout << stnum << " " << streetname << "\n"
    cout << town << " " << zip << "\n"
@@ -96,4 +96,3 @@ void cmd_view(string& lastname,string& firstname, int& age, int& stnum, string& 
 
    return;
 }
-

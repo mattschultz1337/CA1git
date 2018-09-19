@@ -7,9 +7,9 @@
 using namespace std;
 class VoterDB {
    public:
-       void cmd_new(string lastname,string firstname, int age, int stnum, string streetname, string town, string zip, float amtdonated);
-       void cmd_update(string lastname,string firstname, int age, int stnum, string streetname, string town, string zip);
-       void cmd_view(string lastname,string firstname, int age, int stnum, string streetname, string town, string zip, float amtdonated);
+       static void cmd_new(string lastname,string firstname, int age, int stnum, string streetname, string town, string zip, float amtdonated);
+       static void cmd_update(string lastname,string firstname, int age, int stnum, string streetname, string town, string zip);
+       static void cmd_view(string lastname,string firstname, int age, int stnum, string streetname, string town, string zip, float amtdonated);
 
 
    private:
