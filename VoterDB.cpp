@@ -5,7 +5,7 @@
 using namespace std;
 
 
-static void cmd_new(string& lastname,string& firstname, int& age, int& stnum, string& streetname, string& town, string& zip, float& amtdonated){
+static void cmd_new(std::string& lastname,std::string& firstname, int& age, int& stnum, std::string& streetname, std::string& town, std::string& zip, float& amtdonated){
    cout << "\nEnter First Name\n";
    cout << ">: ";
    getline (cin, firstname);
@@ -32,7 +32,7 @@ static void cmd_new(string& lastname,string& firstname, int& age, int& stnum, st
    return;
 }
 
-static void cmd_update(string& lastname,string& firstname, int& age, int& stnum, string& streetname, string& town, string& zip){
+static void cmd_update(std::string& lastname,std::string& firstname, int& age, int& stnum, std::string& streetname, std::string& town, std::string& zip){
    string input="";
    cout << "\nEnter Y or N\n";
    cout << "Change First Name? (" << firstname << ")\n";
@@ -88,10 +88,10 @@ static void cmd_update(string& lastname,string& firstname, int& age, int& stnum,
    return;
 }
 
-static void cmd_view(string& lastname,string& firstname, int& age, int& stnum, string& streetname, string& town, string& zip, float& amtdonated){
-   cout << firstname << " " << lastname << ", " << age << "\n"
-   cout << stnum << " " << streetname << "\n"
-   cout << town << " " << zip << "\n"
+static void cmd_view(std::string& lastname,std::string& firstname, int& age, int& stnum, std::string& streetname, std::string& town, std::string& zip, float& amtdonated){
+   cout << firstname << " " << lastname << ", " << age << "\n";
+   cout << stnum << " " << streetname << "\n";
+   cout << town << " " << zip << "\n";
    cout << "Amount Donated: $" << amtdonated;
 
    return;
