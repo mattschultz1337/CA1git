@@ -6,7 +6,7 @@
 using namespace std;
 
 
-static void cmd_new(std::string& lastname,std::string& firstname, int& age, int& stnum, std::string& streetname, std::string& town, std::string& zip, float& amtdonated){
+static void cmd_new(string& lastname,string& firstname, int& age, int& stnum, string& streetname, string& town, string& zip, float& amtdonated){
    int intin=0;
    cout << "\nEnter First Name\n";
    cout << ">: ";
@@ -38,7 +38,7 @@ static void cmd_new(std::string& lastname,std::string& firstname, int& age, int&
    return;
 }
 
-static void cmd_update(std::string& lastname,std::string& firstname, int& age, int& stnum, std::string& streetname, std::string& town, std::string& zip){
+static void cmd_update(string& lastname,string& firstname, int& age, int& stnum, string& streetname, string& town, string& zip){
    string input="";
    int intin=0;
    cout << "\nEnter Y or N\n";
@@ -106,7 +106,7 @@ static void cmd_update(std::string& lastname,std::string& firstname, int& age, i
    return;
 }
 
-static void cmd_view(std::string& lastname,std::string& firstname, int& age, int& stnum, std::string& streetname, std::string& town, std::string& zip, float& amtdonated){
+static void cmd_view(string& lastname,string& firstname, int& age, int& stnum, string& streetname, string& town, string& zip, float& amtdonated){
    cout << firstname << " " << lastname << ", " << age << "\n";
    cout << stnum << " " << streetname << "\n";
    cout << town << " " << zip << "\n";
