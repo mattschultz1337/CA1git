@@ -7,7 +7,6 @@ using namespace std;
 
 
  void cmd_new(string& lastname,string& firstname, int& age, int& stnum, string& streetname, string& town, string& zip, float& amtdonated){
-   int intin=0;
    cout << "\nEnter First Name\n";
    cout << ">: ";
    getline (cin, firstname);
@@ -16,14 +15,10 @@ using namespace std;
    getline (cin, lastname);
    cout << "\nEnter Age\n";
    cout << ">: ";
-   cin>>intin;
-   age=intin;
-   intin=0;
+   cin>>age;
    cout << "\nEnter Street Number\n";
    cout << ">: ";
-   cin>>intin;
-   age=intin;
-   intin=0;
+   cin>>stnum;
    cout << "\nEnter Street Name\n";
    cout << ">: ";
    getline (cin, streetname);
