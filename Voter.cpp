@@ -40,7 +40,7 @@ int main(int argc, char *argv[])
   	  } else if(command=="Report"){
 
 	    }
-      cout << ">: ";
+      cout << "\nCommand>: ";
       getline(cin,command);
    }
 

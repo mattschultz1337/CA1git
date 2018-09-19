@@ -36,65 +36,61 @@ using namespace std;
  void cmd_update(string& lastname,string& firstname, int& age, int& stnum, string& streetname, string& town, string& zip){
    string input="";
    int intin=0;
-   cout << "\nEnter Y or N\n";
+   cout << "\nEnter y or n\n";
    cout << "Change First Name? (" << firstname << ")\n";
    cout << ">: ";
-   getline(cin,input);
+   cin>>input;
   if((input)=="y"){
       cout << "\n>: ";
-      getline (cin, firstname);
+      cin>>firstname;
       input="";
    }
    cout << "\nChange Last Name? (" << lastname << ")\n";
    cout << ">: ";
-   getline(cin,input);
+   cin>>input;
    if((input)=="y"){
       cout << "\n>: ";
-      getline (cin, lastname);
+      cin>>lastname;
       input="";
    }
    cout << "\nChange Age? (" << age << ")\n";
    cout << ">: ";
-   getline(cin,input);
-  if((input)=="y"){
+   cin>>input
+   if((input)=="y"){
 	    cout << "\n>: ";
-      cin>>intin;
-      age=intin;
-      intin=0;
+      cin>>age;
       input="";
    }
    cout << "\nChange Street Number? (" << stnum << ")\n";
    cout << ">: ";
-   getline(cin,input);
+   cin>>input;
   if((input)=="y"){
 	    cout << "\n>: ";
-      cin>>intin;
-      age=intin;
-      intin=0;
+      cin>>stnum;
       input="";
    }
    cout << "\nChange Street Name? (" << streetname << ")\n";
    cout << ">: ";
-   getline(cin,input);
+   cin>>input
    if((input)=="y"){
 	    cout << "\n>: ";
-      getline (cin, streetname);
+      cin>>streetname;
       input="";
    }
    cout << "\nChange Town? (" << town << ")\n";
    cout << ">: ";
-   getline(cin,input);
+   cin>>input;
    if((input)=="y"){
 	    cout << "\n>: ";
-      getline (cin, town);
+    cin>>town;
       input="";
    }
    cout << "\nChange Zipcode? (" << zip << ")\n";
    cout << ">: ";
-   getline(cin,input);
+   cin>>input;
    if((input)=="y"){
 	    cout << "\n>: ";
-      getline (cin, zip);
+      cin>>zip;
       input="";
    }
 
