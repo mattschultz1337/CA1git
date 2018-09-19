@@ -5,7 +5,7 @@ all:	Voter
 # Specify the object files that the target depends on
 # Also specify the object files needed to create the executable
 Voter:	Voter.o VoterDB.o
-	g++  Voter.o VoterDB.o  -o Voter.exe
+	g++  Voter.o VoterDB.o  -o Voter
 
 # Specify how the object files should be created from source files
 VoterDB.o:	VoterDB.cpp
