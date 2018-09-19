@@ -24,21 +24,23 @@ int main(int argc, char *argv[])
    string town="";
    string zip="";
    float amtdonated=0;
+   cout << ""
    cout << ">: ";
    string command;
    getline (cin, command);
    while(command != "Quit"){
-	if(command=="New"){
-		cmd_new(lastname,firstname,age,stnum,street,town,zip,amtdonated);
-	} else if(command=="Update"){
-		cmd_update(lastname, firstname, age, stnum,street,town,zip);
-	} else if(command=="View"){
-		cmd_view(lastname,firstname,age,stnum,street,town,zip,amtdonated);
-	} else if(command=="Donate"){
+	    if(command=="New"){
+	       cmd_new(lastname,firstname,age,stnum,street,town,zip,amtdonated);
+	    } else if(command=="Update"){
+	       cmd_update(lastname, firstname, age, stnum,street,town,zip);
+	    } else if(command=="View"){
+		     cmd_view(lastname,firstname,age,stnum,street,town,zip,amtdonated);
+      } else if(command=="Donate"){
 
-	} else if(command=="Report"){
+  	  } else if(command=="Report"){
 
-	}
+	    }
+      getline(cin,command);
    }
 
 
