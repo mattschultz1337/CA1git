@@ -1,7 +1,6 @@
 #include <iostream>
 #include <stdlib.h>
 #include <string>
-#include <sstream>
 #include "VoterDB.h"
 using namespace std;
 
@@ -16,12 +15,12 @@ static void cmd_new(std::string& lastname,std::string& firstname, int& age, int&
    getline (cin, lastname);
    cout << "\nEnter Age\n";
    cout << ">: ";
-   std::stringstream(cin,intin);
+   cin>>intin;
    age=intin;
    intin=0;
    cout << "\nEnter Street Number\n";
    cout << ">: ";
-   std::stringstream(cin,intin);
+   cin>>intin;
    age=intin;
    intin=0;
    cout << "\nEnter Street Name\n";
@@ -63,7 +62,7 @@ static void cmd_update(std::string& lastname,std::string& firstname, int& age, i
    getline(cin,input);
   if((input)=="y"){
 	    cout << "\n>: ";
-      std::stringstream(cin,intin);
+      cin>>intin;
       age=intin;
       intin=0;
       input="";
@@ -73,7 +72,7 @@ static void cmd_update(std::string& lastname,std::string& firstname, int& age, i
    getline(cin,input);
   if((input)=="y"){
 	    cout << "\n>: ";
-      std::stringstream(cin,intin);
+      cin>>intin;
       age=intin;
       intin=0;
       input="";
