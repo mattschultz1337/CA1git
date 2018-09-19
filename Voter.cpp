@@ -29,7 +29,7 @@ int main(int argc, char *argv[])
 	} else if(command=="Update"){
 		VoterDB::cmd_update(lastname, firstname, age, stnum,street,town,zip);
 	} else if(command=="View"){
-		VoterDB::cmd_view(lastname,firstname,age,stnum,street,town,zip,amtdonated)
+		VoterDB::cmd_view(lastname,firstname,age,stnum,street,town,zip,amtdonated);
 	} else if(command=="Donate"){
 
 	} else if(command=="Report"){
