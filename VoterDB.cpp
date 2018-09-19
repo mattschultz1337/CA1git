@@ -38,7 +38,7 @@ static void cmd_update(std::string& lastname,std::string& firstname, int& age, i
    cout << "Change First Name? (" << firstname << ")\n";
    cout << ">: ";
    getline(cin,input);
-   if(std::tolower(input)=="y"){
+   if(std::str_tolower(input)=="y"){
       cout << "\n>: ";
       getline (cin, firstname);
       input="";
@@ -46,7 +46,7 @@ static void cmd_update(std::string& lastname,std::string& firstname, int& age, i
    cout << "\nChange Last Name? (" << lastname << ")\n";
    cout << ">: ";
    getline(cin,input);
-   if(std::tolower(input)=="y"){
+   if(std::str_tolower(input)=="y"){
       cout << "\n>: ";
       getline (cin, lastname);
       input="";
@@ -54,7 +54,7 @@ static void cmd_update(std::string& lastname,std::string& firstname, int& age, i
    cout << "\nChange Age? (" << age << ")\n";
    cout << ">: ";
    getline(cin,input);
-   if(std::tolower(input)=="y"){
+   if(std::str_tolower(input)=="y"){
 	    cout << "\n>: ";
       stringstream(cin,age);
       input="";
@@ -62,7 +62,7 @@ static void cmd_update(std::string& lastname,std::string& firstname, int& age, i
    cout << "\nChange Street Number? (" << stnum << ")\n";
    cout << ">: ";
    getline(cin,input);
-   if(std::tolower(input)=="y"){
+   if(std::str_tolower(input)=="y"){
 	    cout << "\n>: ";
       stringstream(cin,stnum);
       input="";
@@ -70,7 +70,7 @@ static void cmd_update(std::string& lastname,std::string& firstname, int& age, i
    cout << "\nChange Street Name? (" << streetname << ")\n";
    cout << ">: ";
    getline(cin,input);
-   if(std::tolower(input)=="y"){
+   if(std::str_tolower(input)=="y"){
 	    cout << "\n>: ";
       getline (cin, streetname);
       input="";
@@ -78,7 +78,7 @@ static void cmd_update(std::string& lastname,std::string& firstname, int& age, i
    cout << "\nChange Town? (" << town << ")\n";
    cout << ">: ";
    getline(cin,input);
-   if(std::tolower(input)=="y"){
+   if(std::str_tolower(input)=="y"){
 	    cout << "\n>: ";
       getline (cin, town);
       input="";
@@ -86,7 +86,7 @@ static void cmd_update(std::string& lastname,std::string& firstname, int& age, i
    cout << "\nChange Zipcode? (" << zip << ")\n";
    cout << ">: ";
    getline(cin,input);
-   if(std::tolower(input)=="y"){
+   if(std::str_tolower(input)=="y"){
 	    cout << "\n>: ";
       getline (cin, zip);
       input="";
