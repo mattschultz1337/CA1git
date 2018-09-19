@@ -12,14 +12,14 @@ class Voter {
 
 int main(int argc, char *argv[])
 {
-   string* lastname="";
-   string* firstname="";
-   int* age=0;
-   int* stnum=0;
-   string* street="";
-   string* town="";
-   string* zip="";
-   float* amtdonated=0;
+   string lastname="";
+   string firstname="";
+   int age=0;
+   int stnum=0;
+   string street="";
+   string town="";
+   string zip="";
+   float amtdonated=0;
    cout << ">: ";
    string command;
    getline (cin, command);
