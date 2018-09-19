@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include "VoterDB.h"
 using namespace std;
-
+void cmd_new(string& lastname,string& firstname, int& age, int& stnum, string& streetname, string& town, string& zip, float& amtdonated);
 class Voter {
    public:
      int main(int argc, char *argv[]);
