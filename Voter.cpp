@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
    string town="";
    string zip="";
    float amtdonated=0;
-   cout << ""
+   cout << "Enter a command(New,Update,View,Report,Donate, or Quit)";
    cout << ">: ";
    string command;
    getline (cin, command);
