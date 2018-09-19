@@ -17,12 +17,12 @@ static void cmd_new(std::string& lastname,std::string& firstname, int& age, int&
    cout << "\nEnter Age\n";
    cout << ">: ";
    std::stringstream(cin,intin);
-   age=*intin;
+   age=intin;
    intin=0;
    cout << "\nEnter Street Number\n";
    cout << ">: ";
    std::stringstream(cin,intin);
-   age=*intin;
+   age=intin;
    intin=0;
    cout << "\nEnter Street Name\n";
    cout << ">: ";
@@ -64,7 +64,7 @@ static void cmd_update(std::string& lastname,std::string& firstname, int& age, i
   if((input)=="y"){
 	    cout << "\n>: ";
       std::stringstream(cin,intin);
-      age=*intin;
+      age=intin;
       intin=0;
       input="";
    }
@@ -74,7 +74,7 @@ static void cmd_update(std::string& lastname,std::string& firstname, int& age, i
   if((input)=="y"){
 	    cout << "\n>: ";
       std::stringstream(cin,intin);
-      age=*intin;
+      age=intin;
       intin=0;
       input="";
    }
