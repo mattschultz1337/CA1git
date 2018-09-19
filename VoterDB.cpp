@@ -37,50 +37,57 @@ static void cmd_update(std::string& lastname,std::string& firstname, int& age, i
    cout << "\nEnter Y or N\n";
    cout << "Change First Name? (" << firstname << ")\n";
    cout << ">: ";
-   if(getline(cin,input)=="Y" || getline(cin,input)=="y"){
+   getline(cin,input)
+   if(std::tolower(input)=="y"){
       cout << "\n>: ";
       getline (cin, firstname);
       input="";
    }
    cout << "\nChange Last Name? (" << lastname << ")\n";
    cout << ">: ";
-   if(getline(cin,input)=="Y" || getline(cin,input)=="y"){
+   getline(cin,input)
+   if(std::tolower(input)=="y"){
       cout << "\n>: ";
       getline (cin, lastname);
       input="";
    }
    cout << "\nChange Age? (" << age << ")\n";
    cout << ">: ";
-   if(getline(cin,input)=="Y" || getline(cin,input)=="y"){
-	cout << "\n>: ";
+   getline(cin,input)
+   if(std::tolower(input)=="y"){
+	    cout << "\n>: ";
       stringstream(cin,age);
       input="";
    }
    cout << "\nChange Street Number? (" << stnum << ")\n";
    cout << ">: ";
-   if(getline(cin,input)=="Y" || getline(cin,input)=="y"){
-	cout << "\n>: ";
+   getline(cin,input)
+   if(std::tolower(input)=="y"){
+	    cout << "\n>: ";
       stringstream(cin,stnum);
       input="";
    }
    cout << "\nChange Street Name? (" << streetname << ")\n";
    cout << ">: ";
-   if(getline(cin,input)=="Y" || getline(cin,input)=="y"){
-	cout << "\n>: ";
+   getline(cin,input)
+   if(std::tolower(input)=="y"){
+	    cout << "\n>: ";
       getline (cin, streetname);
       input="";
    }
    cout << "\nChange Town? (" << town << ")\n";
    cout << ">: ";
-   if(getline(cin,input)=="Y" || getline(cin,input)=="y"){
-	cout << "\n>: ";
+   getline(cin,input)
+   if(std::tolower(input)=="y"){
+	    cout << "\n>: ";
       getline (cin, town);
       input="";
    }
    cout << "\nChange Zipcode? (" << zip << ")\n";
    cout << ">: ";
-   if(getline(cin,input)=="Y" || getline(cin,input)=="y"){
-	cout << "\n>: ";
+   getline(cin,input)
+   if(std::tolower(input)=="y"){
+	    cout << "\n>: ";
       getline (cin, zip);
       input="";
    }
