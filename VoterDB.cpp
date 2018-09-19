@@ -7,6 +7,7 @@ using namespace std;
 
 
 static void cmd_new(std::string& lastname,std::string& firstname, int& age, int& stnum, std::string& streetname, std::string& town, std::string& zip, float& amtdonated){
+   int intin=0;
    cout << "\nEnter First Name\n";
    cout << ">: ";
    getline (cin, firstname);
@@ -15,10 +16,14 @@ static void cmd_new(std::string& lastname,std::string& firstname, int& age, int&
    getline (cin, lastname);
    cout << "\nEnter Age\n";
    cout << ">: ";
-   std::stringstream(cin,age);
+   std::stringstream(cin,intin);
+   age=*intin;
+   intin=0;
    cout << "\nEnter Street Number\n";
    cout << ">: ";
-   std::stringstream(cin,stnum);
+   std::stringstream(cin,intin);
+   age=*intin;
+   intin=0;
    cout << "\nEnter Street Name\n";
    cout << ">: ";
    getline (cin, streetname);
@@ -35,6 +40,7 @@ static void cmd_new(std::string& lastname,std::string& firstname, int& age, int&
 
 static void cmd_update(std::string& lastname,std::string& firstname, int& age, int& stnum, std::string& streetname, std::string& town, std::string& zip){
    string input="";
+   int intin=0;
    cout << "\nEnter Y or N\n";
    cout << "Change First Name? (" << firstname << ")\n";
    cout << ">: ";
@@ -57,7 +63,9 @@ static void cmd_update(std::string& lastname,std::string& firstname, int& age, i
    getline(cin,input);
   if((input)=="y"){
 	    cout << "\n>: ";
-      std::stringstream(cin,age);
+      std::stringstream(cin,intin);
+      age=*intin;
+      intin=0;
       input="";
    }
    cout << "\nChange Street Number? (" << stnum << ")\n";
@@ -65,7 +73,9 @@ static void cmd_update(std::string& lastname,std::string& firstname, int& age, i
    getline(cin,input);
   if((input)=="y"){
 	    cout << "\n>: ";
-      std::stringstream(cin,stnum);
+      std::stringstream(cin,intin);
+      age=*intin;
+      intin=0;
       input="";
    }
    cout << "\nChange Street Name? (" << streetname << ")\n";
