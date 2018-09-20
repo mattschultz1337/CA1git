@@ -16,13 +16,13 @@ class Voter {
 };
 
 int main(int argc, char *argv[]) {
-   string lastname="";
-   string firstname="";
+   string lastname="[EMPTY]";
+   string firstname="[EMPTY]";
    int age=0;
    int stnum=0;
-   string street="";
-   string town="";
-   string zip="";
+   string street="[EMPTY]";
+   string town="[EMPTY]";
+   string zip="00000";
    float amtdonated=0;
    cout << "Enter a command(New,Update,View,Report,Donate, or Quit)";
    cout << ">: ";
