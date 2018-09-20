@@ -105,3 +105,17 @@ using namespace std;
 
    return;
 }
+
+void cmd_donate(float& amtdonated){
+    int amt = 0;
+    cout << "\nEnter an ammount to donate: ";
+    cin >> amt;
+    amtdonated += amt;
+    return;
+}
+
+void cmd_report(string lastname, float amtdonated){
+    cout << "\n" << lastname << "$";
+    cout << setprecision(2);
+    cout << amtdonated << "\n";
+}
