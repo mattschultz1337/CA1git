@@ -55,7 +55,7 @@ using namespace std;
    }
    cout << "\nChange Age? (" << age << ")\n";
    cout << ">: ";
-   cin>>input
+   cin>>input;
    if((input)=="y"){
 	    cout << "\n>: ";
       cin>>age;
@@ -71,7 +71,7 @@ using namespace std;
    }
    cout << "\nChange Street Name? (" << streetname << ")\n";
    cout << ">: ";
-   cin>>input
+   cin>>input;
    if((input)=="y"){
 	    cout << "\n>: ";
       cin>>streetname;
