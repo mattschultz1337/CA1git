@@ -37,9 +37,9 @@ int main(int argc, char *argv[])
 	    } else if(command=="View"){
 		     cmd_view(lastname,firstname,age,stnum,street,town,zip,amtdonated);
       } else if(command=="Donate"){
-
+         cmd_donate(amtdonated);
   	  } else if(command=="Report"){
-
+         cmd_report(lastname,amtdonated);
 	    }
       cout << "\nCommand>: ";
       cin>>command;
