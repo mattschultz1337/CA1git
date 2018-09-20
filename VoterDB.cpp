@@ -107,7 +107,7 @@ using namespace std;
 }
 
 void cmd_donate(float& amtdonated){
-    int amt = 0;
+    float amt = 0;
     cout << "\nEnter an ammount to donate: ";
     cin >> amt;
     amtdonated += amt;
