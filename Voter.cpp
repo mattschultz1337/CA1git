@@ -40,6 +40,7 @@ int main(int argc, char *argv[]) {
   	  } else if(command=="Report"){
          cmd_report(lastname,amtdonated);
 	    }
+      cout << "\n Command '" << command << "' not Recognized";
       cout << "\nCommand>: ";
       cin>>command;
    }
