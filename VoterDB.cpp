@@ -8,12 +8,12 @@ using namespace std;
 
 
  void cmd_new(string& lastname,string& firstname, int& age, int& stnum, string& streetname, string& town, string& zip, float& amtdonated){
-   cout << "\nEnter First Name\n";
-   cout << ">: ";
-   cin>>firstname;
    cout << "\nEnter Last Name\n";
    cout << ">: ";
    cin>>lastname;
+   cout << "\nEnter First Name\n";
+   cout << ">: ";
+   cin>>firstname;
    cout << "\nEnter Age\n";
    cout << ">: ";
    cin>>age;
@@ -38,7 +38,7 @@ using namespace std;
    string input="";
    int intin=0;
    cout << "\nEnter y or n\n";
-   cout << "Change First Name? (" << firstname << ")\n";
+   cout << "Change Last Name? (" << firstname << ")\n";
    cout << ">: ";
    cin>>input;
   if((input)=="y"){
@@ -46,7 +46,7 @@ using namespace std;
       cin>>firstname;
       input="";
    }
-   cout << "\nChange Last Name? (" << lastname << ")\n";
+   cout << "\nChange First Name? (" << lastname << ")\n";
    cout << ">: ";
    cin>>input;
    if((input)=="y"){
