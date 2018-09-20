@@ -27,7 +27,7 @@ int main(int argc, char *argv[])
    cout << "Enter a command(New,Update,View,Report,Donate, or Quit)";
    cout << ">: ";
    string command;
-   getline (cin, command);
+   cin>>command;
    while(command != "Quit"){
 	    if(command=="New"){
 	       cmd_new(lastname,firstname,age,stnum,street,town,zip,amtdonated);
@@ -41,7 +41,7 @@ int main(int argc, char *argv[])
 
 	    }
       cout << "\nCommand>: ";
-      getline(cin,command);
+      cin>>command;
    }
 
 
