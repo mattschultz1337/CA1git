@@ -15,8 +15,7 @@ class Voter {
 
 };
 
-int main(int argc, char *argv[])
-{
+int main(int argc, char *argv[]) {
    string lastname="";
    string firstname="";
    int age=0;
