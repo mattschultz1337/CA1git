@@ -116,6 +116,5 @@ void cmd_donate(float& amtdonated){
 
 void cmd_report(string lastname, float amtdonated){
     cout << "\n" << lastname << "$";
-    cout.precision(2);
     cout << amtdonated << "\n";
 }
