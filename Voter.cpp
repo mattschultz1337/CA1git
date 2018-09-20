@@ -45,11 +45,9 @@ int main(int argc, char *argv[]) {
   	  } else if(command=="Report"){
          cmd_report(lastname,amtdonated);
          int used=1;
-	    }
-      if(used==0){
+	    }else{
          cout << "\n Command '" << command << "' not Recognized";
       }
-      used=0;
       cout << "\nCommand>: ";
       cin>>command;
    }
