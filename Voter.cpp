@@ -28,19 +28,28 @@ int main(int argc, char *argv[]) {
    cout << ">: ";
    string command;
    cin>>command;
+   int used=0;
    while(command != "Quit"){
 	    if(command=="New"){
+         int used=1;
 	       cmd_new(lastname,firstname,age,stnum,street,town,zip,amtdonated);
 	    } else if(command=="Update"){
+         int used=1;
 	       cmd_update(lastname, firstname, age, stnum,street,town,zip);
 	    } else if(command=="View"){
+         int used=1;
 		     cmd_view(lastname,firstname,age,stnum,street,town,zip,amtdonated);
       } else if(command=="Donate"){
+         int used=1;
          cmd_donate(amtdonated);
   	  } else if(command=="Report"){
+         int used=1;
          cmd_report(lastname,amtdonated);
 	    }
-      cout << "\n Command '" << command << "' not Recognized";
+      if(used==0){
+         cout << "\n Command '" << command << "' not Recognized";
+      }
+      used=0;
       cout << "\nCommand>: ";
       cin>>command;
    }
