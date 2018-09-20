@@ -99,7 +99,7 @@ using namespace std;
 }
 
  void cmd_view(string& lastname,string& firstname, int& age, int& stnum, string& streetname, string& town, string& zip, float& amtdonated){
-   cout << firstname << " " << lastname << ", " << age << "\n";
+   cout << "\n" << firstname << " " << lastname << ", " << age << "\n";
    cout << stnum << " " << streetname << "\n";
    cout << town << " " << zip << "\n";
    cout << "Amount Donated: $" << amtdonated;
@@ -112,10 +112,11 @@ void cmd_donate(float& amtdonated){
     cout << "\nEnter an ammount to donate: ";
     cin >> amt;
     amtdonated += amt;
+    cout << "\nDonated $" << fixed << setprecision(2) << amt;
     return;
 }
 
 void cmd_report(string lastname, float amtdonated){
     cout << "\n" << lastname << " $";
-    cout << fixed << setprecision(2) << amtdonated << '\n';
+    cout << fixed << setprecision(2) << amtdonated;
 }
