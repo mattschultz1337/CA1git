@@ -31,20 +31,20 @@ int main(int argc, char *argv[]) {
    int used=0;
    while(command != "Quit"){
 	    if(command=="New"){
-         int used=1;
 	       cmd_new(lastname,firstname,age,stnum,street,town,zip,amtdonated);
+         int used=1;
 	    } else if(command=="Update"){
-         int used=1;
 	       cmd_update(lastname, firstname, age, stnum,street,town,zip);
+         int used=1;
 	    } else if(command=="View"){
-         int used=1;
 		     cmd_view(lastname,firstname,age,stnum,street,town,zip,amtdonated);
+         int used=1;
       } else if(command=="Donate"){
-         int used=1;
          cmd_donate(amtdonated);
-  	  } else if(command=="Report"){
          int used=1;
+  	  } else if(command=="Report"){
          cmd_report(lastname,amtdonated);
+         int used=1;
 	    }
       if(used==0){
          cout << "\n Command '" << command << "' not Recognized";
